@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Product Passport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Product Passport</h1>
+    </header>
+    <main>
+        <section id="add-product">
+            <h2>Add Product</h2>
+            <form id="product-form">
+                <label for="serialNumber">Serial Number:</label>
+                <input type="text" id="serialNumber" name="serialNumber" required>
+                
+                <label for="name">Product Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="manufactureDate">Manufacture Date:</label>
+                <input type="date" id="manufactureDate" name="manufactureDate" required>
+                
+                <label for="manufacturer">Manufacturer:</label>
+                <input type="text" id="manufacturer" name="manufacturer" required>
+                
+                <label for="materialComposition">Material Composition:</label>
+                <input type="text" id="materialComposition" name="materialComposition" required>
+                
+                <label for="fuelConsumption">Fuel Consumption (L):</label>
+                <input type="number" id="fuelConsumption" name="fuelConsumption" required>
+                
+                <label for="carbonEmission">Carbon Emission (Kg):</label>
+                <input type="number" id="carbonEmission" name="carbonEmission" required>
+                
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+        <section id="product-list">
+            <h2>Product List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>Name</th>
+                        <th>Manufacture Date</th>
+                        <th>Manufacturer</th>
+                        <th>Material Composition</th>
+                        <th>Fuel Consumption</th>
+                        <th>Carbon Emission</th>
+                    </tr>
+                </thead>
+                <tbody id="products">
+                    <!-- Products will be displayed here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Digital Product Passport</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
